@@ -1,18 +1,26 @@
+.header
+  background: #F6FBFE
+  box-shadow: 0px 4px 10px rgba(6, 6, 6, 0.1)
+  height: 80px
+  z-index: 1
+  position: relative
 .menu
   display: flex
   justify-content: space-between
-  padding-top: 18px
+  padding-top: 12px
   &__logo
     display: flex
     flex-direction: column
+    justify-content: center
+    line-height: 22px
   &__contacts
     display: flex
     flex-direction: column
+    align-items: flex-end
 .logo
   font-style: normal
   font-weight: 500
   font-size: 18px
-  line-height: 21px
   letter-spacing: 0.035em
   color: $black
   text-decoration: none
@@ -20,22 +28,22 @@
     font-style: normal
     font-weight: normal
     font-size: 12px
-    line-height: 14px
     letter-spacing: 0.035em
     color: $black
     text-decoration: none
 ul
   display: flex
   color: $black
+li
+  list-style: none
 .nav
+  margin-left: 109px
   &__item
     text-decoration: none
-    list-style: none
-    margin-right: 14px
+    margin-right: 19px
     font-style: normal
     font-weight: normal
     font-size: 16px
-    line-height: 19px
     letter-spacing: 0.035em
     color: $black
     position: relative
@@ -43,19 +51,34 @@ ul
       position: absolute
       content: ""
       display: block
-      height: 3px
+      height: 2px
       border-radius: 2px
       background-color: $green
       width: 0%
       left: 50%
       transition: width .3s ease-in-out
       transform: translateX(-50%)
+      margin-top: 4px
     &:hover
       color: $green
       &:after
         width: 100%
 .contacts
   &__btn
-    border: 1px solid #26B475
-    box-sizing: border-box
-    border-radius: 10px
+    margin-top: 8px
+    &:hover
+      color: $light
+      background-color: #26B475
+  img
+    padding-right: 8px
+  &__phone
+    font-style: normal
+    font-weight: 500
+    font-size: 18px
+    line-height: 21px
+    text-align: center
+    letter-spacing: 0.035em
+    color: #1E2026
+    text-decoration: none
+    align-items: end
+    display: flex
