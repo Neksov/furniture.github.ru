@@ -1,1 +1,61 @@
-
+.menu
+  display: flex
+  justify-content: space-between
+  padding-top: 18px
+  &__logo
+    display: flex
+    flex-direction: column
+  &__contacts
+    display: flex
+    flex-direction: column
+.logo
+  font-style: normal
+  font-weight: 500
+  font-size: 18px
+  line-height: 21px
+  letter-spacing: 0.035em
+  color: $black
+  text-decoration: none
+  &-small
+    font-style: normal
+    font-weight: normal
+    font-size: 12px
+    line-height: 14px
+    letter-spacing: 0.035em
+    color: $black
+    text-decoration: none
+ul
+  display: flex
+  color: $black
+.nav
+  &__item
+    text-decoration: none
+    list-style: none
+    margin-right: 14px
+    font-style: normal
+    font-weight: normal
+    font-size: 16px
+    line-height: 19px
+    letter-spacing: 0.035em
+    color: $black
+    position: relative
+    &::after //нижнее подчеркивание
+      position: absolute
+      content: ""
+      display: block
+      height: 3px
+      border-radius: 2px
+      background-color: $green
+      width: 0%
+      left: 50%
+      transition: width .3s ease-in-out
+      transform: translateX(-50%)
+    &:hover
+      color: $green
+      &:after
+        width: 100%
+.contacts
+  &__btn
+    border: 1px solid #26B475
+    box-sizing: border-box
+    border-radius: 10px

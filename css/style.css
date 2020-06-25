@@ -374,7 +374,90 @@ input {
 label.invalid {
   position: absolute;
   margin-top: 53px;
-  color: #38393b; }
+  color: #000000; }
 
 input.invalid {
   border-bottom: 1px solid #ff5a3c; }
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding-top: 18px; }
+  .menu__logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .menu__contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+
+.logo {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.035em;
+  color: #000000;
+  text-decoration: none; }
+  .logo-small {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.035em;
+    color: #000000;
+    text-decoration: none; }
+
+ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #000000; }
+
+.nav__item {
+  text-decoration: none;
+  list-style: none;
+  margin-right: 14px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.035em;
+  color: #000000;
+  position: relative; }
+  .nav__item::after {
+    position: absolute;
+    content: "";
+    display: block;
+    height: 3px;
+    border-radius: 2px;
+    background-color: #26B475;
+    width: 0%;
+    left: 50%;
+    -webkit-transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%); }
+  .nav__item:hover {
+    color: #26B475; }
+    .nav__item:hover:after {
+      width: 100%; }
+
+.contacts__btn {
+  border: 1px solid #26B475;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 10px; }
