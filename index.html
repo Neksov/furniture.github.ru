@@ -61,14 +61,55 @@
             Заполните форму и получите <span class="green"> бесплатно:</span>
           </h3>
           <div class="info__delivery">
-            <span><img src="img/car.svg" alt="car">Доставка</span>
-            <span><img src="img/telga.svg" alt="car">Подъем</span>
-            <span><img src="img/instrument.svg" alt="car">Установка</span>
+            <span class="service"><img src="img/car.svg" alt="car">Доставка</span>
+            <span class="service"><img src="img/telga.svg" alt="car">Подъем</span>
+            <span class="service"><img src="img/instrument.svg" alt="car">Установка</span>
           </div>
           <img src="img/present.png" alt="present" class="present">
         </div>
       </div>
+
+      <form action="send.php" method="POST" class="form hero__form">
+        <div class="hero__input-group">
+          <input type="text" name="userName" class="input form__input hero__input hero__input--light"
+            id="hero-user-name" placeholder="Ваше имя" />
+        </div>
+        <div class="hero__input-group">
+          <input type="tel" name="userPhone" class="input form__input hero__input" id="hero-user-phone"
+            placeholder="Ваш телефон" />
+        </div>
+        <button class="btn hero__btn">
+          Получить
+        </button>
+        <!-- /.button button-rimary modal__button -->
+      </form>
+      <!-- /.form modal__form -->
     </section>
+    <!-- /.hero -->
+    <section class="work">
+      <div class="container">
+        <h1 class="blocktitle">
+          C 2012 года мы продумали, изготовили и установили клиентам <span class="green">более 2 350 кухонь</span>
+        </h1>
+        <div class="work__info">
+          <div class="cards">
+            <div class="card">
+              <div class="maincard card__maincard">
+                <div class="maincard__img"><img src="img/material.png" alt="material"></div>
+                <div class="maincard__info">
+                  <div class="maincard__title">
+                    Качественные материалы
+                  </div>
+                  <div class="maincard__text">
+                    Используем только, качественные материалы </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /.work -->
   </main>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>

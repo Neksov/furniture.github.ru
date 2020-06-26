@@ -1,6 +1,6 @@
 .hero
   background: url(../img/hero.jpg) no-repeat center / cover
-  height: 610px
+  height: 595px
   z-index: 0
   &__title
     width: 594px
@@ -11,11 +11,37 @@
     letter-spacing: 0.035em
     color: $black
     padding-top: 94px
+  &__info
+    margin-top: 31px
+    line-height: 23px
+  &__form
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: center
+    margin-top: 29px
+    margin-left: 470px
+    width: 607px
+    height: 115px
+    background: $light
+    border: 2px solid #26B475
+    box-sizing: border-box
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.1)
+    border-radius: 7px
+  &__input
+    &-group
+      margin-right: 38px
+  &__btn
+    padding: 0.5rem 2.65rem
+    &:hover
+      padding: 0.5rem 2.6rem
+      background: #F6FBFE
+      border: 1px solid #26B475
+      color: #26B475
+      font-weight: bold
 .info
   display: flex
   flex-direction: column
-  align-items: center
-  justify-content: left
   width: 591px
   height: 118px
   background: $light
@@ -28,9 +54,28 @@
     font-style: normal
     font-weight: 500
     font-size: 22px
-    line-height: 132.69%
     letter-spacing: 0.035em
     color: #1E2026
+    padding-top: 10px
+    padding-left: 20px
+  &__delivery
+    display: flex
+    align-items: center
+    flex-direction: row
+    padding-left: 25px
+    img
+      padding-right: 15px
 .present
   position: absolute
-  right: 0
+  right: 26px
+  top: 34px
+.service
+  display: flex
+  align-items: center
+  padding-right: 33px
+  font-style: normal
+  font-weight: normal
+  font-size: 18px
+  line-height: 132.69%
+  letter-spacing: 0.035em
+  color: #1E2026

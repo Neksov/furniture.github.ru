@@ -32,6 +32,28 @@
     outline: none
 .green 
   color: $green
+.blocktitle
+  margin: auto
+  width: 872px
+  height: 111px
+  font-style: normal
+  font-weight: bold
+  font-size: 34px
+  line-height: 45px
+  text-align: center
+  letter-spacing: 0.035em
+  color: #242424
+  position: relative
+  padding-bottom: 100px
+  &::after
+    display: flex
+    position: absolute
+    content: ''
+    width: 219px
+    height: 2px
+    background: #26B475
+    left: 37.5%
+    bottom: 0
 label
   &.invalid
     position: absolute
