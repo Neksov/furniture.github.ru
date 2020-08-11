@@ -660,13 +660,23 @@ li {
 .work {
   padding-top: 68px;
   background: url(../img/work.jpg) no-repeat center/cover;
-  height: 673px; }
+  height: 673px;
+  position: relative; }
   .work__info {
     margin-top: 106px;
     margin-left: 60px; }
+  .work__btn {
+    margin-left: 577px;
+    margin-top: 19px;
+    padding: 0.78rem 2.45rem; }
+    .work__btn:hover {
+      padding: 0.78rem 2.45rem;
+      background: #F6FBFE;
+      border: 1px solid #26B475;
+      color: #26B475;
+      font-weight: bold; }
 
 .cards {
-  width: 780px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -689,8 +699,9 @@ li {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin-right: 30px;
-  margin-bottom: 30px; }
+  margin-right: 36px;
+  margin-bottom: 30px;
+  padding: 4px; }
   .card__maincard {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -709,7 +720,7 @@ li {
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 22px;
   color: #1E2026; }
 
 .maincard__text {
@@ -722,3 +733,8 @@ li {
 .maincard__img {
   margin-right: 20px;
   margin-left: 22px; }
+
+.workman {
+  right: 104px;
+  top: 165px;
+  position: absolute; }
