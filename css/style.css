@@ -661,6 +661,17 @@ li {
   padding-top: 68px;
   background: url(../img/work.jpg) no-repeat center/cover;
   height: 673px; }
+  .work__info {
+    margin-top: 106px;
+    margin-left: 60px; }
+
+.cards {
+  width: 780px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
 
 .card {
   max-width: 349px;
@@ -677,7 +688,9 @@ li {
   align-items: center;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-  justify-content: center; }
+  justify-content: center;
+  margin-right: 30px;
+  margin-bottom: 30px; }
   .card__maincard {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -705,3 +718,7 @@ li {
   font-size: 13px;
   line-height: 15px;
   color: #505050; }
+
+.maincard__img {
+  margin-right: 20px;
+  margin-left: 22px; }
