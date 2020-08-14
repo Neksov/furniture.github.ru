@@ -15,4 +15,6 @@ function openCity(evt, cityName) {
   document.getElementById(cityName).style.display = "block";
   evt.currentTarget.className += " active";
 
+  var first_link = document.querySelectorAll('.tabcontent')[0];
+  first_link.classList.add('active');
 }

@@ -38,6 +38,9 @@
     color: #FFFFFF
 .tabcontent 
   display: none
+  .active
+    display: flex
+  
 .box
   display: flex
   flex-direction: row
@@ -45,11 +48,17 @@
   justify-content: center
   img
     border-radius: 7px
-    width: 247px
+    max-width: 247px
     height: 250px
     margin-right: 20px
     margin-left: 18px
-    margin-top: 49px
+    margin-top: 49px    
+    transition: .3s ease-in-out
+    cursor: pointer
+    display: block
+    &:hover
+      transform: scale(1.2)
 
-
+.fancybox-image
+  border-radius: 7px 
 
