@@ -156,13 +156,12 @@
           <span class="green">Каталог</span> нашей продукции
         </h1>
         <div class="tab">
-          <button class="btn tab__btn tab__btn--light tablinks"
-            onclick="openCity(event, 'Кухни');return true">Кухни</button>
+          <button class="btn tab__btn tab__btn--light tablinksFirst" onclick="openCity(event, 'Кухни')">Кухни</button>
           <button class="btn tab__btn tablinks" onclick="openCity(event, 'Шкафы купе')">Шкафы купе</button>
           <button class="btn tab__btn tablinks" onclick="openCity(event, 'Для спальни')">Для спальни</button>
           <button class="btn tab__btn tablinks" onclick="openCity(event, 'Детские')">Детские</button>
         </div>
-        <div id="Кухни" class="tabcontent">
+        <div id="Кухни" class="tabcontentFirst">
           <div class="box">
             <a href="img/product1.jpg" data-fancybox="images">
               <img src="img/product1.jpg" alt="kitchen" />
@@ -234,6 +233,7 @@
             </a>
             <a href="img/product8.jpg" data-fancybox="gallery">
               <img src="img/product8.jpg" alt="children" />
+            </a>
           </div>
         </div>
         <button class="btn catalog__btn">
@@ -242,6 +242,24 @@
       </div>
     </section>
     <!-- /.catalog -->
+    <section class="helps">
+      <div class="container">
+        <div class="help">
+          <div class="help__left">
+            <h1 class="help__title">
+              Не можете выбрать мебель?
+            </h1>
+            <span class="help__text">Сэкономим ваше время!</span><br>
+            <span class="help__info">Подберем мебель под ваше помещение</span>
+          </div>
+          <div class="help__right">
+            <p>Lsdfghjkl;"Lkjhg</p>
+          </div>
+        </div>
+        <!-- /.helps__left -->
+      </div>
+    </section>
+    <!-- /.helps -->
   </main>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>

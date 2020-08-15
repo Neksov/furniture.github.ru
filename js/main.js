@@ -1,10 +1,19 @@
+//ТАБЫ
 function openCity(evt, cityName) {
-  var i, tabcontent, tablinks;
-
+  var i, tabcontent, tablinks, tabcontentFirst, tablinksFirst;
 
   tabcontent = document.getElementsByClassName("tabcontent");
   for (i = 0; i < tabcontent.length; i++) {
     tabcontent[i].style.display = "none";
+  }
+  tabcontentFirst = document.getElementsByClassName("tabcontentFirst");
+  for (i = 0; i < tabcontentFirst.length; i++) {
+    tabcontentFirst[i].style.display = "none";
+  }
+
+  tablinksFirst = document.getElementsByClassName("tablinksFirst");
+  for (i = 0; i < tablinksFirst.length; i++) {
+    tablinksFirst[i].className = tablinksFirst[i].className.replace(" active", "");
   }
 
   tablinks = document.getElementsByClassName("tablinks");
@@ -14,7 +23,4 @@ function openCity(evt, cityName) {
 
   document.getElementById(cityName).style.display = "block";
   evt.currentTarget.className += " active";
-
-  var first_link = document.querySelectorAll('.tabcontent')[0];
-  first_link.classList.add('active');
 }
