@@ -272,8 +272,31 @@
               </div>
             </div>
           </div>
-          <div class="help__right">
-            <p>Lsdfghjkl;"Lkjhg</p>
+          <div class="consultation help__right">
+            <form action="consultation.php" method="POST" class="form consultation__form">
+              <div class="consultation__group">
+                <h1 class="consultation__group-title">
+                  Нужна консультация?
+                </h1>
+                <p class="consultation__group-text">
+                  Оставьте заявку на бесплатную консультацию
+                </p>
+                <div class="consultation__input-group">
+                  <input type="text" name="userName"
+                    class="input form__input consultation__input consultation__input--light" id="consultation-user-name"
+                    placeholder="Введите имя..." />
+                </div>
+                <div class="consultation__input-group">
+                  <input type="tel" name="userPhone" class="input form__input consultation__input"
+                    id="consultation-user-phone" placeholder="Введите номер телефона..." />
+                </div>
+                <button class="btn consultation__btn">
+                  Получить консультацию
+                </button>
+                <!-- /.button button-rimary modal__button -->
+              </div>
+            </form>
+            <!-- /.form modal__form -->
           </div>
         </div>
         <!-- /.helps__left -->
