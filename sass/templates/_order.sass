@@ -1,0 +1,36 @@
+.order 
+  padding-top: 65px
+  padding-bottom: 148px
+  background: #F6FBFE
+.card
+  position: relative
+  width: 300px
+  height: 326px
+  background: #FFFFFF
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1)
+  border-radius: 7px
+  margin-top: 65px
+  cursor: pointer
+  perspective: 1000px
+  display: flex
+  align-items: center
+  justify-content: center
+  &__info,&__back
+    position: absolute
+    width: 290.54px
+    height: 316.43px
+    border: 1px solid rgba(0, 0, 0, 0.1)
+    box-sizing: border-box
+    border-radius: 7px
+    display: flex
+    align-items: center
+    justify-content: center
+    backface-visibility: hidden
+    transition: all 0.5s ease-in-out
+  &__back
+    transform: rotateY(180deg)
+  &:hover
+    .info
+      transform: rotateY(180deg)
+    .back
+      transform: rotateY(360deg)
