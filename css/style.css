@@ -981,7 +981,8 @@ li {
   margin-top: 19px;
   margin-left: 4px;
   -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out; }
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 53px; }
   .consultation__btn:hover {
     background: #F6FBFE;
     border: 1px solid #26B475;
@@ -1029,6 +1030,8 @@ li {
   margin-right: 24px;
   margin-bottom: 30px; }
   .cardOrder__info, .cardOrder__back {
+    left: 5px;
+    top: 5px;
     position: absolute;
     width: 290.54px;
     height: 316.43px;
@@ -1103,7 +1106,7 @@ li {
 
 .partners {
   padding-top: 67px;
-  padding-bottom: 88px; }
+  padding-bottom: 102px; }
 
 .partnersWrap {
   display: -webkit-box;
@@ -1120,11 +1123,17 @@ li {
   margin-top: -16px; }
   .partnersWrap__img {
     width: 200px;
-    height: 150px; }
+    height: 150px;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    cursor: pointer; }
+    .partnersWrap__img:hover {
+      -webkit-transform: scale(1.2);
+      transform: scale(1.2); }
 
 .customer {
   padding-top: 72px;
-  padding-bottom: 71px;
+  padding-bottom: 75px;
   background: #F6FBFE; }
 
 .customerWrap {
@@ -1139,14 +1148,20 @@ li {
   flex-wrap: wrap;
   -ms-flex-pack: distribute;
   justify-content: space-around;
-  margin-top: -9px; }
+  margin-top: -2px; }
   .customerWrap__img {
     width: 200px;
-    height: 150px; }
+    height: 150px;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    cursor: pointer; }
+    .customerWrap__img:hover {
+      -webkit-transform: scale(1.2);
+      transform: scale(1.2); }
 
 .reviews {
   padding-top: 63px;
-  padding-bottom: 66px; }
+  padding-bottom: 14px; }
   .reviews__card {
     background: #FFFFFF;
     -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
@@ -1154,7 +1169,8 @@ li {
     border-radius: 7px;
     margin-top: 10px;
     width: 946px;
-    height: 139px; }
+    height: 139px;
+    overflow-x: auto; }
     .reviews__card-title {
       font-style: normal;
       font-weight: bold;
@@ -1165,7 +1181,7 @@ li {
       margin-right: auto;
       padding-left: 34px; }
     .reviews__card-text {
-      width: 886px;
+      padding: 0px 33px;
       font-style: normal;
       font-weight: normal;
       font-size: 14px;
@@ -1173,7 +1189,7 @@ li {
 
 .swiper-container {
   width: 100%;
-  height: 100%; }
+  height: 200px; }
 
 .swiper-slide {
   display: -webkit-box;
@@ -1186,3 +1202,87 @@ li {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column; }
+
+.maps {
+  background: url(../img/maps.jpg) no-repeat center/cover;
+  height: 500px;
+  position: relative; }
+
+.mapsCard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: absolute;
+  width: 440px;
+  height: 370px;
+  top: 57px;
+  left: 197px;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 10px; }
+  .mapsCard__group-title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000; }
+  .mapsCard__group-text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+    margin-top: -12px; }
+  .mapsCard__group a {
+    text-decoration: none; }
+
+.footer {
+  height: 91px;
+  background: #26B475;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.footerWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  .footerWrap__text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-left: 341px; }
+  .footerWrap__btn {
+    border: 1px solid #FFFFFF;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-filter: drop-shadow(0px 0px 15px rgba(38, 180, 117, 0.5));
+    filter: drop-shadow(0px 0px 15px rgba(38, 180, 117, 0.5));
+    border-radius: 7px;
+    width: 214px;
+    height: 43px;
+    margin-right: -41px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out; }
+    .footerWrap__btn:hover {
+      background: #F6FBFE;
+      border: 1px solid #26B475;
+      color: #26B475;
+      font-weight: bold; }

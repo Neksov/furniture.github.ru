@@ -30,6 +30,6 @@ var mySwiper = new Swiper('.swiper-container', {
   autoHeight: true,
   spaceBetween: 100,
   autoplay: {
-    delay: 5000,
+    delay: 8000,
   },
 })
