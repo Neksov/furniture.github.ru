@@ -24,3 +24,12 @@ function openCity(evt, cityName) {
   document.getElementById(cityName).style.display = "block";
   evt.currentTarget.className += " active";
 }
+
+var mySwiper = new Swiper('.swiper-container', {
+  loop: true,
+  autoHeight: true,
+  spaceBetween: 100,
+  autoplay: {
+    delay: 5000,
+  },
+})
