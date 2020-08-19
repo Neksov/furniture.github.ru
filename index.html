@@ -27,12 +27,12 @@
         </span>
         <nav class="nav menu__nav">
           <ul class="burgermenu clearfix">
-            <li><a href="#hero" class="nav__item">О компании</a></li>
-            <li><a href="#video" class="nav__item">Каталог</a></li>
-            <li><a href="#price" class="nav__item">Заказать</a></li>
-            <li><a href="#footer" class="nav__item">Мебель</a></li>
-            <li><a href="#footer" class="nav__item">Отзывы</a></li>
-            <li><a href="#footer" class="nav__item">Контакты</a></li>
+            <li><a href="#work" class="nav__item">О компании</a></li>
+            <li><a href="#catalog" class="nav__item">Каталог</a></li>
+            <li><a href="#helps" class="nav__item">Заказать</a></li>
+            <li><a href="#catalog" class="nav__item">Мебель</a></li>
+            <li><a href="#reviews" class="nav__item">Отзывы</a></li>
+            <li><a href="#maps" class="nav__item">Контакты</a></li>
           </ul>
         </nav>
         <!-- /.menu nav__menu -->
@@ -69,7 +69,7 @@
         </div>
       </div>
 
-      <form action="send.php" method="POST" class="form hero__form">
+      <form action="send.php" method="POST" class="form hero__form ">
         <div class="hero__input-group">
           <input type="text" name="userName" class="input form__input hero__input hero__input--light"
             id="hero-user-name" placeholder="Ваше имя" />
@@ -86,7 +86,7 @@
       <!-- /.form modal__form -->
     </section>
     <!-- /.hero -->
-    <section class="work">
+    <section class="work" id="work">
       <div class="container">
         <h1 class="blocktitle">
           C 2012 года мы продумали, изготовили и установили клиентам <span class="green">более 2 350 кухонь</span>
@@ -144,13 +144,13 @@
           </div>
         </div>
         <img src="img/workman.png" alt="workman" class="workman">
-        <button class="btn work__btn">
+        <button class="btn work__btn" data-toggle="modal">
           Оставить заявку
         </button>
       </div>
     </section>
     <!-- /.work -->
-    <section class="catalog">
+    <section class="catalog" id="catalog">
       <div class="container">
         <h1 class="blocktitle">
           <span class="green">Каталог</span> нашей продукции
@@ -236,13 +236,13 @@
             </a>
           </div>
         </div>
-        <button class="btn catalog__btn">
+        <button class="btn catalog__btn" data-toggle="modal">
           Вызвать замерщика
         </button>
       </div>
     </section>
     <!-- /.catalog -->
-    <section class="helps">
+    <section class="helps" id="helps">
       <div class="container">
         <div class="help">
           <div class="help__left">
@@ -324,7 +324,7 @@
               <h3 class="cardOrder__title">
                 ЗАКАЗАТЬ ПРОСТО
               </h3>
-              <button class="btn cardOrder__btn">
+              <button class="btn cardOrder__btn" data-toggle="modal">
                 Заказать
               </button>
             </div>
@@ -344,7 +344,7 @@
               <h3 class="cardOrder__title">
                 ЗАКАЗАТЬ ПРОСТО
               </h3>
-              <button class="btn cardOrder__btn">
+              <button class="btn cardOrder__btn" data-toggle="modal">
                 Заказать
               </button>
             </div>
@@ -364,7 +364,7 @@
               <h3 class="cardOrder__title">
                 ЗАКАЗАТЬ ПРОСТО
               </h3>
-              <button class="btn cardOrder__btn">
+              <button class="btn cardOrder__btn" data-toggle="modal">
                 Заказать
               </button>
             </div>
@@ -384,7 +384,7 @@
               <h3 class="cardOrder__title">
                 ЗАКАЗАТЬ ПРОСТО
               </h3>
-              <button class="btn cardOrder__btn">
+              <button class="btn cardOrder__btn" data-toggle="modal">
                 Заказать
               </button>
             </div>
@@ -404,7 +404,7 @@
               <h3 class="cardOrder__title">
                 ЗАКАЗАТЬ ПРОСТО
               </h3>
-              <button class="btn cardOrder__btn">
+              <button class="btn cardOrder__btn" data-toggle="modal">
                 Заказать
               </button>
             </div>
@@ -424,7 +424,7 @@
               <h3 class="cardOrder__title">
                 ЗАКАЗАТЬ ПРОСТО
               </h3>
-              <button class="btn cardOrder__btn">
+              <button class="btn cardOrder__btn" data-toggle="modal">
                 Заказать
               </button>
             </div>
@@ -465,7 +465,7 @@
       </div>
     </section>
     <!-- /.customer -->
-    <section class="reviews">
+    <section class="reviews" id="reviews">
       <div class="container">
         <h1 class="blocktitle order__blocktitle">
           Посмотрите отзывы <span class="green">Наших клиентов</span>
@@ -528,7 +528,7 @@
       </div>
     </section>
     <!-- /.reviews -->
-    <section class="maps">
+    <section class="maps" id="maps">
       <div class="container">
         <div class="mapsCard">
           <div class="mapsCard__group">
@@ -546,10 +546,10 @@
           <div class="mapsCard__group mapsCard__group-fourth">
             <h3 class="mapsCard__group-title mapsCard__group-title-fourth">Мы в соц сетях:</h3>
             <div class="mapsCard__group-social">
-              <img src="img/whatsup.png" alt="whatsup">
-              <img src="img/telegram.png" alt="telegram">
-              <img src="img/instagram.png" alt="instagram">
-              <img src="img/facebook.png" alt="facebook">
+              <a href="https://www.whatsapp.com/" target="_blank"><img src="img/whatsapp.png" alt="whatsapp"></a>
+              <a href="https://www.telegram.org" target="_blank"><img src="img/telegram.png" alt="telegram"></a>
+              <a href="https://www.instagram.com" target="_blank"><img src="img/instagram.png" alt="instagram"></a>
+              <a href="https://www.facebook.com" target="_blank"><img src="img/facebook.png" alt="facebook"></a>
             </div>
           </div>
         </div>
@@ -561,14 +561,52 @@
     <div class="container">
       <div class="footerWrap">
         <span class="footerWrap__text">
-          © 2020 Разработка и поддержка сайта - Студия "Webprofy.kz"
+          © 2020 Разработка и поддержка сайта - Студия <a href="https://www.Webprofy.kz/"
+            target="_blank">"Webprofy.kz"</a>
         </span>
-        <button class="btn footerWrap__btn">
+        <button class="btn footerWrap__btn" data-toggle="modal">
           Заказать звонок
         </button>
       </div>
     </div>
   </footer>
+  <!-- Модальне окно -->
+  <div class="modal">
+    <div class="modal__dialog">
+      <button class="modal__close"></button>
+      <form action="sendModal.php" method="POST" class="form modal__form">
+        <div class="input-group modal__input-group">
+          <input type="text" name="userName" class="input form__input modal__input" id="modal-user-name"
+            placeholder="Ваше имя " maxlength="15" />
+        </div>
+        <div class="input-group modal__input-group">
+          <input type="tel" name="userPhone" class="input form__input modal__input" id="modal-user-phone"
+            placeholder="Ваш номер телефона " />
+        </div>
+        <button class="btn btn--primary modal__btn">
+          Отправить
+        </button>
+        <!-- /.button button-rimary modal__button -->
+      </form>
+      <!-- /.form modal__form -->
+    </div>
+  </div>
+  <!-- Модальне окно благодарности -->
+  <div class="modalSend">
+    <div class="modalSend__dialog">
+      <div class="modalSend__content">
+        <h3 class="modalSend__header">
+          Спасибо за заявку.<br />Наш менеджер перезвонит Вам в течение 15
+          минут. <br />
+        </h3>
+      </div>
+    </div>
+  </div>
+  <div class="buttonUp">
+    <span id="button-up">
+      <img src="img/arrow-up_icon-icons.com_73669.svg" alt="Наверх" />
+    </span>
+  </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
   <script src="js/jquery.fancybox.min.js"></script>
   <script src="js/swiper.min.js"></script>
@@ -576,6 +614,8 @@
   <script src="https://5e7c8b12452c471f8d34e456--reverent-yonath-cad9c2.netlify.com/js/jquery.validate.min.js"></script>
   <script src="https://5e7c8b12452c471f8d34e456--reverent-yonath-cad9c2.netlify.com/js/jquery.mask.min.js"></script>
   <script src="https://5e7c8b12452c471f8d34e456--reverent-yonath-cad9c2.netlify.com/js/wow.min.js"></script>
+  <script src="js/buttonUp.min.js"></script>
+
 </body>
 
 </html>

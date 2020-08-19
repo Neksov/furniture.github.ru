@@ -23,7 +23,7 @@ function openCity(evt, cityName) {
 
   document.getElementById(cityName).style.display = "block";
   evt.currentTarget.className += " active";
-}
+};
 
 var mySwiper = new Swiper('.swiper-container', {
   loop: true,
@@ -32,4 +32,198 @@ var mySwiper = new Swiper('.swiper-container', {
   autoplay: {
     delay: 8000,
   },
-})
+});
+
+//плавный якорь
+$(function () {
+  $('a[href^="#"]').on("click", function (event) {
+    // отменяем стандартное действие
+    event.preventDefault();
+
+    var sc = $(this).attr("href"),
+      dn = $(sc).offset().top;
+    /*
+     * sc - в переменную заносим информацию о том, к какому блоку надо перейти
+     * dn - определяем положение блока на странице
+     */
+
+    $("html, body").animate({
+        scrollTop: dn,
+      },
+      1000
+    );
+
+    /*
+     * 1000 скорость перехода в миллисекундах
+     */
+  });
+});
+
+$(document).ready(function () {
+
+  let modal = $(".modal"); //помещаем модальное окно
+  modalBtn = $("[data-toggle = modal]"); //
+  closeBtn = $(".modal__close"); //
+
+  modalBtn.on("click", function () {
+    //присваееваем класс
+    modal.toggleClass("modal--visible");
+  });
+
+  closeBtn.on("click", function () {
+    //присваееваем класс
+    modal.toggleClass("modal--visible");
+  });
+  //закрытие по esc
+  $(document).keyup("click", function (event) {
+    if (event.which == "27") {
+      $(".modal").removeClass("modal--visible");
+    }
+  });
+  // закрытие по клику вне окна
+  $(document).click(function (e) {
+    if ($(e.target).is(".modal")) {
+      modal.toggleClass("modal--visible");
+    }
+  });
+
+  //открытие модального окна ПОДПИСКИ
+  $(".modalSend-btn").on("click", function (event) {
+    event.preventDefault();
+    $(".modalSend").fadeIn();
+  });
+  //закрытие по esc окна ПОДПИСКИ
+  $(document).keyup("click", function (event) {
+    if (event.which == "27") {
+      $(".modalSend").fadeOut();
+    }
+  });
+  // закрытие по клику вне окна  ПОДПИСКИ
+  $(document).on("click", function (e) {
+    $(".modalSend").fadeOut();
+  });
+
+  $(".modal__form").validate({
+    errorClass: "invalid",
+    rules: {
+      // строчное правило
+      userName: {
+        required: true,
+        minlength: 2,
+        maxlength: 15
+      },
+      userPhone: {
+        required: !0,
+        minlength: 16
+      },
+    },
+    //сообщения
+    messages: {
+      userName: {
+        required: "Имя обязательно",
+        minlength: "Имя не короче 2 символов",
+        maxlength: "Имя не длиньше 15 символов"
+      },
+      userPhone: {
+        required: "Телефон обязателен",
+        minlength: "Некорректно введен номер"
+      }
+    },
+    //отправка формы через аякс
+    submitHandler: function (form) {
+      $.ajax({
+        type: "POST",
+        url: "sendModal.php",
+        data: $(".modal__form").serialize(), //Преобразует данные формы в строку, пригодную для использования в URL
+        success: function (response) {
+          $(form)[0].reset(); // чистит поля после отправки формы
+          $(".modalSend").fadeIn();
+        }
+      });
+    }
+  });
+
+  $(".consultation__form").validate({
+    errorClass: "invalid",
+    rules: {
+      // строчное правило
+      userName: {
+        required: true,
+        minlength: 2,
+        maxlength: 15
+      },
+      userPhone: {
+        required: !0,
+        minlength: 16
+      },
+    },
+    //сообщения
+    messages: {
+      userName: {
+        required: "Имя обязательно",
+        minlength: "Имя не короче 2 символов",
+        maxlength: "Имя не длиньше 15 символов"
+      },
+      userPhone: {
+        required: "Телефон обязателен",
+        minlength: "Некорректно введен номер"
+      }
+    },
+    //отправка формы через аякс
+    submitHandler: function (form) {
+      $.ajax({
+        type: "POST",
+        url: "consultation.php",
+        data: $(".consultation__form").serialize(), //Преобразует данные формы в строку, пригодную для использования в URL
+        success: function (response) {
+          $(form)[0].reset(); // чистит поля после отправки формы
+          $(".modalSend").fadeIn();
+        }
+      });
+    }
+  });
+
+  $(".hero__form").validate({
+    errorClass: "invalid",
+    rules: {
+      // строчное правило
+      userName: {
+        required: true,
+        minlength: 2,
+        maxlength: 15
+      },
+      userPhone: {
+        required: !0,
+        minlength: 16
+      },
+    },
+    //сообщения
+    messages: {
+      userName: {
+        required: "Имя обязательно",
+        minlength: "Имя не короче 2 символов",
+        maxlength: "Имя не длиньше 15 символов"
+      },
+      userPhone: {
+        required: "Телефон обязателен",
+        minlength: "Некорректно введен номер"
+      }
+    },
+    //отправка формы через аякс
+    submitHandler: function (form) {
+      $.ajax({
+        type: "POST",
+        url: "hero.php",
+        data: $(".hero__form").serialize(), //Преобразует данные формы в строку, пригодную для использования в URL
+        success: function (response) {
+          $(form)[0].reset(); // чистит поля после отправки формы
+          $(".modalSend").fadeIn();
+        }
+      });
+    }
+  });
+  //маска для номера телефона
+  $("[type=tel]").mask("+7(000)000-00-00", {
+    placeholder: "Ваш номер телефона:"
+  });
+});
