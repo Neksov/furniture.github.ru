@@ -1810,28 +1810,59 @@ li {
     .menu__contacts {
       margin-left: auto; }
   .hero__form {
-    margin-left: 140px; }
+    margin-left: 10px;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 97%; }
+  .hero__title {
+    width: 100%;
+    font-size: 25px;
+    padding-top: 50px; }
+  .hero__info {
+    width: 100%;
+    height: 140px; }
+  .hero__title {
+    font-size: 18px;
+    width: 300px; }
+  .hero__delivery {
+    padding-left: 10px;
+    padding-top: 0px; }
+  .present {
+    top: 10px; }
+  .service {
+    font-size: 16px; }
   .blocktitle {
-    width: 100%; }
+    width: 100%;
+    font-size: 25px; }
     .blocktitle::after {
       left: 34.5%; }
-  .work__info {
-    margin-top: 20px;
-    margin-left: 20px; }
-  .work__btn {
-    position: absolute;
-    margin-left: 473px;
-    margin-top: -40px; }
+  .work {
+    padding-top: 20px;
+    height: 700px; }
+    .work__info {
+      margin-top: 20px;
+      margin-left: 20px; }
+    .work__btn {
+      display: block;
+      margin: auto;
+      margin-top: -10px; }
+  .cards {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
   .workman {
-    width: 50%;
-    right: -20px; }
-  .catalog__btn {
-    display: block;
-    margin: auto;
-    margin-top: 50px; }
-  .tab__btn {
-    margin-right: 10px;
-    margin-left: 10px; }
+    display: none; }
+  .catalog {
+    padding-top: 40px; }
+    .catalog__btn {
+      display: block;
+      margin: auto;
+      margin-top: 50px; }
+  .tab {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    .tab__btn {
+      margin: 10px; }
   .help {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
@@ -1839,17 +1870,36 @@ li {
     -ms-flex-pack: center;
     justify-content: center;
     text-align: center; }
+    .help__title {
+      font-size: 25px;
+      line-height: 30px; }
+    .help__text {
+      font-size: 25px;
+      line-height: 30px; }
+    .help__info {
+      font-size: 20px;
+      line-height: 30px; }
   .picture {
-    margin-left: 0; }
+    display: block;
+    margin: auto;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+  .order {
+    padding-bottom: 50px; }
+  .partners {
+    padding-bottom: 50px; }
+  .customer {
+    padding-bottom: 50px; }
   .reviews__card {
-    width: 720px; }
+    width: 95%; }
   .mapsCard {
     width: 340px;
-    left: 90px; }
+    left: 60px; }
     .mapsCard__group {
       margin-left: 20px; }
   .footerWrap__text {
-    margin-left: 200px; }
+    margin-left: 0px;
+    font-size: 12px; }
   .footerWrap__btn {
     margin-right: 0; }
   .menu-icon {
