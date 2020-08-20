@@ -25,17 +25,33 @@
             Мебель любой сложности
           </a>
         </span>
-        <nav class="nav menu__nav">
-          <ul class="burgermenu clearfix">
-            <li><a href="#work" class="nav__item">О компании</a></li>
-            <li><a href="#catalog" class="nav__item">Каталог</a></li>
-            <li><a href="#helps" class="nav__item">Заказать</a></li>
-            <li><a href="#catalog" class="nav__item">Мебель</a></li>
-            <li><a href="#reviews" class="nav__item">Отзывы</a></li>
-            <li><a href="#maps" class="nav__item">Контакты</a></li>
-          </ul>
-        </nav>
-        <!-- /.menu nav__menu -->
+
+        <div class="nav-wrapper">
+          <nav class="nav menu__nav">
+            <ul class="burgermenu clearfix">
+              <li><a href="#work" class="nav__item">О компании</a></li>
+              <li><a href="#catalog" class="nav__item">Каталог</a></li>
+              <li><a href="#helps" class="nav__item">Заказать</a></li>
+              <li><a href="#catalog" class="nav__item">Мебель</a></li>
+              <li><a href="#reviews" class="nav__item">Отзывы</a></li>
+              <li><a href="#maps" class="nav__item">Контакты</a></li>
+            </ul>
+          </nav>
+          <!-- /.menu nav__menu -->
+
+          <!-- Мобильная навигация -->
+          <div id="mobile-nav" class="mobile-nav">
+            <ul class="mobile-nav__list">
+              <li class="mobile-nav__item"><a href="#work" class="nav__item">О компании</a></li>
+              <li class="mobile-nav__item"><a href="#catalog" class="nav__item">Каталог</a></li>
+              <li class="mobile-nav__item"><a href="#helps" class="nav__item">Заказать</a></li>
+              <li class="mobile-nav__item"><a href="#catalog" class="nav__item">Мебель</a></li>
+              <li class="mobile-nav__item"><a href="#reviews" class="nav__item">Отзывы</a></li>
+              <li class="mobile-nav__item"><a href="#maps" class="nav__item">Контакты</a></li>
+            </ul>
+          </div>
+        </div>
+
         <div class="contacts menu__contacts">
           <a href="tel:+77055554499" class="phone contacts__phone"><img src="img/phone.png" alt="phone">
             +7 705 555 44 99</a>
@@ -45,6 +61,10 @@
           </button>
         </div>
         <!-- /.contacts menu__contacts -->
+        <!-- Кнопка для мобильной навигации -->
+        <div id="menu-togle" class="menu-icon">
+          <div class="menu-icon-line"></div>
+        </div>
       </div>
     </div>
   </section>

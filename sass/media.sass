@@ -1,0 +1,387 @@
+@media  screen and (min-width : 1200px) and (max-width : 1279px)
+  .footerWrap
+    &__text
+      margin-left: 250px
+    &__btn
+      margin-right: 0
+@media  screen and (min-width : 1024px) and (max-width : 1199px)
+  .container
+    max-width: 95%
+  .menu
+    justify-content: space-around
+    position: relative
+    &__nav
+      display: none
+    &__contacts
+      margin-left: auto
+  .hero
+    &__form
+      margin-left: 340px
+  .workman
+    width: 37%
+    right: -87px
+  .catalog
+    &__btn
+      display: block
+      margin: auto
+      margin-top: 50px
+  .help
+    flex-wrap: wrap
+    justify-content: center
+    text-align: center
+  .picture
+    margin-left: 0
+  .footerWrap
+    &__text 
+      margin-left: 200px
+    &__btn
+      margin-right: 0
+  .menu-icon 
+    z-index: 19
+    position: relative
+    display: none
+    width: 30px
+    height: 30px
+    cursor: pointer
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-left: 50px
+  .menu-icon-line 
+    position: relative
+    width: 30px
+    height: 3px
+    background-color: #26B475
+  .menu-icon-line::before 
+    position: absolute
+    left: 0
+    top: -10px
+    content: ''
+    width: 30px
+    height: 3px
+    background-color: #26B475
+    transition: transform 0.2s ease-in, top 0.2s linear 0.2s
+
+  .menu-icon-line::after 
+    position: absolute
+    left: 0
+    top: 10px
+    content: ''
+    width: 30px
+    height: 3px
+    background-color: #26B475
+    transition: transform 0.2s ease-in, top 0.2s linear 0.2s
+
+  .menu-icon.menu-icon-active .menu-icon-line 
+    background-color: transparent
+
+  .menu-icon.menu-icon-active .menu-icon-line::before 
+    transform: rotate(45deg)
+    top: 0
+    transition: top 0.2s linear, transform 0.2s ease-in 0.2s
+
+  .menu-icon.menu-icon-active .menu-icon-line::after 
+    transform: rotate(-45deg)
+    top: 0
+    transition: top 0.2s linear, transform 0.2s ease-in 0.2s
+
+  .mobile-nav 
+    z-index: 9
+    display: block
+    position: absolute
+    right: -350px
+    top: 0
+    width: 320px
+    padding: 50px
+    background-color: rgba(251, 255, 254,1)
+    transition: transform 0.4s ease-in
+    border-radius: 0 0 0 50px
+
+  .mobile-nav--active 
+    transform: translateX(-100%)
+
+  .mobile-nav__list 
+    list-style-type: none
+    margin: 0
+    padding: 0
+    display: flex
+    flex-direction: column
+
+  .mobile-nav__item 
+    margin-bottom: 30px
+
+  .mobile-nav__link 
+    color: #fff
+    text-decoration: none
+    font-weight: 600
+    font-size: 22px
+
+@media  screen and (min-width : 768px) and (max-width : 1023px)
+  .container
+    max-width: 95%
+  .menu
+    justify-content: space-around
+    position: relative
+    &__nav
+      display: none
+    &__contacts
+      margin-left: auto
+  .hero
+    &__form
+      margin-left: 140px
+  .blocktitle
+    width: 100%
+  .work
+    &__info 
+      margin-top: 20px
+      margin-left: 20px
+    &__btn 
+      position: absolute
+      margin-left: 473px
+      margin-top: -40px
+  .workman
+    width: 50%
+    right: -20px
+  .catalog
+    &__btn
+      display: block
+      margin: auto
+      margin-top: 50px
+  .tab
+    &__btn 
+      margin-right: 5px
+      margin-left: 5px
+  .help
+    flex-wrap: wrap
+    justify-content: center
+    text-align: center
+  .picture
+    margin-left: 0
+  .reviews
+    &__card
+      width: 720px
+  .mapsCard
+    width: 340px
+    left: 90px
+    &__group 
+      margin-left: 20px
+  .footerWrap
+    &__text 
+      margin-left: 10px
+    &__btn
+      margin-right: 0
+  .menu-icon 
+    z-index: 19
+    position: relative
+    display: none
+    width: 30px
+    height: 30px
+    cursor: pointer
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-left: 50px
+  .menu-icon-line 
+    position: relative
+    width: 30px
+    height: 3px
+    background-color: #26B475
+  .menu-icon-line::before 
+    position: absolute
+    left: 0
+    top: -10px
+    content: ''
+    width: 30px
+    height: 3px
+    background-color: #26B475
+    transition: transform 0.2s ease-in, top 0.2s linear 0.2s
+
+  .menu-icon-line::after 
+    position: absolute
+    left: 0
+    top: 10px
+    content: ''
+    width: 30px
+    height: 3px
+    background-color: #26B475
+    transition: transform 0.2s ease-in, top 0.2s linear 0.2s
+
+  .menu-icon.menu-icon-active .menu-icon-line 
+    background-color: transparent
+
+  .menu-icon.menu-icon-active .menu-icon-line::before 
+    transform: rotate(45deg)
+    top: 0
+    transition: top 0.2s linear, transform 0.2s ease-in 0.2s
+
+  .menu-icon.menu-icon-active .menu-icon-line::after 
+    transform: rotate(-45deg)
+    top: 0
+    transition: top 0.2s linear, transform 0.2s ease-in 0.2s
+
+  .mobile-nav 
+    z-index: 9
+    display: block
+    position: absolute
+    right: -350px
+    top: 0
+    width: 320px
+    padding: 50px
+    background-color: rgba(251, 255, 254, 1)
+    transition: transform 0.4s ease-in
+    border-radius: 0 0 0 50px
+
+  .mobile-nav--active 
+    transform: translateX(-100%)
+
+  .mobile-nav__list 
+    list-style-type: none
+    margin: 0
+    padding: 0
+    display: flex
+    flex-direction: column
+
+  .mobile-nav__item 
+    margin-bottom: 30px
+
+  .mobile-nav__link 
+    color: #fff
+    text-decoration: none
+    font-weight: 600
+    font-size: 22px
+
+@media  screen and (min-width : 480px) and (max-width : 767px)
+  .container
+    max-width: 95%
+  .menu
+    justify-content: space-around
+    position: relative
+    &__nav
+      display: none
+    &__contacts
+      margin-left: auto
+  .hero
+    &__form
+      margin-left: 140px
+  .blocktitle
+    width: 100%
+    &::after
+      left: 34.5%
+  .work
+    &__info 
+      margin-top: 20px
+      margin-left: 20px
+    &__btn 
+      position: absolute
+      margin-left: 473px
+      margin-top: -40px
+  .workman
+    width: 50%
+    right: -20px
+  .catalog
+    &__btn
+      display: block
+      margin: auto
+      margin-top: 50px
+  .tab
+    &__btn 
+      margin-right: 10px
+      margin-left: 10px
+  .help
+    flex-wrap: wrap
+    justify-content: center
+    text-align: center
+  .picture
+    margin-left: 0
+  .reviews
+    &__card
+      width: 720px
+  .mapsCard
+    width: 340px
+    left: 90px
+    &__group 
+      margin-left: 20px
+  .footerWrap
+    &__text 
+      margin-left: 200px
+    &__btn
+      margin-right: 0
+  .menu-icon 
+    z-index: 19
+    position: relative
+    display: none
+    width: 30px
+    height: 30px
+    cursor: pointer
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-left: 50px
+  .menu-icon-line 
+    position: relative
+    width: 30px
+    height: 3px
+    background-color: #26B475
+  .menu-icon-line::before 
+    position: absolute
+    left: 0
+    top: -10px
+    content: ''
+    width: 30px
+    height: 3px
+    background-color: #26B475
+    transition: transform 0.2s ease-in, top 0.2s linear 0.2s
+
+  .menu-icon-line::after 
+    position: absolute
+    left: 0
+    top: 10px
+    content: ''
+    width: 30px
+    height: 3px
+    background-color: #26B475
+    transition: transform 0.2s ease-in, top 0.2s linear 0.2s
+
+  .menu-icon.menu-icon-active .menu-icon-line 
+    background-color: transparent
+
+  .menu-icon.menu-icon-active .menu-icon-line::before 
+    transform: rotate(45deg)
+    top: 0
+    transition: top 0.2s linear, transform 0.2s ease-in 0.2s
+
+  .menu-icon.menu-icon-active .menu-icon-line::after 
+    transform: rotate(-45deg)
+    top: 0
+    transition: top 0.2s linear, transform 0.2s ease-in 0.2s
+
+  .mobile-nav 
+    z-index: 9
+    display: block
+    position: absolute
+    right: -350px
+    top: 0
+    width: 320px
+    padding: 50px
+    background-color: rgba(251, 255, 254, 1)
+    transition: transform 0.4s ease-in
+    border-radius: 0 0 0 50px
+
+  .mobile-nav--active 
+    transform: translateX(-100%)
+
+  .mobile-nav__list 
+    list-style-type: none
+    margin: 0
+    padding: 0
+    display: flex
+    flex-direction: column
+
+  .mobile-nav__item 
+    margin-bottom: 30px
+
+  .mobile-nav__link 
+    color: #fff
+    text-decoration: none
+    font-weight: 600
+    font-size: 22px
